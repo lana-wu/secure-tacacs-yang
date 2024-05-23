@@ -44,12 +44,17 @@ This document defines a YANG module for Terminal Access Controller Access-Contro
 
 # Introduction
 
-TODO Introduction
+This document defines a YANG module for managing Terminal Access Controller Access-Control System Plus (TACACS+) over TLS 1.3 {{!I-D.ietf-opsawg-tacacs-tls13}}. The module is designed as an augmentation to the "ietf-system-tacacs-plus" module specified in {{!RFC9105}}.
 
+The module uses the TLS grouping defined in {{!I-D.ietf-netconf-tls-client-server}}.
 
 # Conventions and Definitions
 
 {::boilerplate bcp14-tagged}
+
+The meanings of the symbols in the YANG tree diagrams are defined in {{?RFC8340}}.
+
+The document uses the terms defined in {{Section 2 of !I-D.ietf-opsawg-tacacs-tls13}} and {{Section 3 of ?RFC8907}}.
 
 # Module Tree Structure
 

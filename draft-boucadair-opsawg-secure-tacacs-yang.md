@@ -123,7 +123,7 @@ subtrees and data nodes have particular sensitivities/vulnerabilities:
    Names" registry {{!RFC6020}} within the "YANG Parameters" registry group:
 
 ~~~~
-   Name:  ietf-ac-glue
+   Name:  ietf-system-secure-tacacs
    Namespace:  urn:ietf:params:xml:ns:yang:ietf-system-secure-tacacs
    Prefix:  secure-tacacs
    Maintained by IANA?  N

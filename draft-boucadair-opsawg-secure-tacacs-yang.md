@@ -58,6 +58,12 @@ The document uses the terms defined in {{Section 2 of !I-D.ietf-opsawg-tacacs-tl
 
 # Module Tree Structure
 
+The full tree structure is shown below:
+
+~~~~~~~~~~
+{::include-fold ./trees/full-tree.txt}
+~~~~~~~~~~
+
 # YANG Module
 
 This module uses references defined in XXXX.

@@ -2,7 +2,7 @@ YANGDIR ?= yang
 
 SVCEXDIR ?= json-examples/svc
 
-STDYANGDIR ?= yang
+STDYANGDIR ?= tools/yang
 $(STDYANGDIR):
 	git clone --depth 10 -b main https://github.com/YangModels/yang $@
 

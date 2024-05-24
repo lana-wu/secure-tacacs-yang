@@ -77,7 +77,7 @@ This module uses references defined in XXXX.
 
 # Security Considerations
 
-This section uses the template described in Section 3.7 of {{?I-D.ietf-netmod-rfc8407bis}}.
+  This section uses the template described in Section 3.7 of {{?I-D.ietf-netmod-rfc8407bis}}.
 
    The YANG module specified in this document defines schema for data
    that is designed to be accessed via network management protocols such
@@ -113,6 +113,10 @@ subtrees and data nodes have particular sensitivities/vulnerabilities:
    'xxx':
    :  xxxx.
 
+   This YANG module uses groupings from other YANG modules that
+   define nodes that may be considered sensitive or vulnerable
+   in network environments. Refer to {{Section 5.3 of !I-D.ietf-netconf-tls-client-server}} for information as to which nodes may
+   be considered sensitive or vulnerable in network environments.
 
 # IANA Considerations
 

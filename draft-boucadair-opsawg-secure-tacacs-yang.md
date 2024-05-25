@@ -60,7 +60,7 @@ The meanings of the symbols in the YANG tree diagrams are defined in {{?RFC8340}
 The document uses the terms defined in {{Section 2 of !I-D.ietf-opsawg-tacacs-tls13}} and {{Section 3 of ?RFC8907}}.
 
 > Note to the RFC Editor: Please update the following:
-> 
+>
 >  *  AAAA --> the assigned RFC number for {{!I-D.ietf-netconf-crypto-types}}
 >  *  BBBB --> the assigned RFC number for {{!I-D.ietf-netconf-trust-anchors}}
 >  *  CCCC --> the assigned RFC number for {{!I-D.ietf-netconf-keystore}}

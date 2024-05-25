@@ -1,0 +1,34 @@
+module: ietf-system-secure-tacacs
+
+  augment /sys:system/sys-tcs-plus:tacacs-plus/sys-tcs-plus:server:
+    +--rw domain-name?   inet:domain-name
+  augment /sys:system/sys-tcs-plus:tacacs-plus/sys-tcs-plus:server
+            /sys-tcs-plus:security:
+    +--:(tls)
+       +--rw client-identity!
+       |  +--rw (auth-type)?
+       |     +--:(certificate)
+       |     |  ...
+       |     +--:(raw-public-key) {tlsc:client-ident-raw-public-key}?
+       |     |  ...
+       |     +--:(tls13-epsk) {tlsc:client-ident-tls13-epsk}?
+       |        ...
+       +--rw server-authentication
+       |  +--rw ca-certs!
+       |  |  ...
+       |  +--rw ee-certs!
+       |  |  ...
+       |  +--rw raw-public-keys! {tlsc:server-auth-raw-public-key}?
+       |  |  ...
+       |  +--rw tls13-epsks?       empty
+       |          {tlsc:server-auth-tls13-epsk}?
+       +--rw hello-params {tlscmn:hello-params}?
+       |  +--rw tls-versions
+       |  |  +--rw tls-version*   identityref
+       |  +--rw cipher-suites
+       |     +--rw cipher-suite*   identityref
+       +--rw keepalives {tlsc:tls-client-keepalives}?
+          +--rw peer-allowed-to-send?   empty
+          +--rw test-peer-aliveness!
+             +--rw max-wait?       uint16
+             +--rw max-attempts?   uint8

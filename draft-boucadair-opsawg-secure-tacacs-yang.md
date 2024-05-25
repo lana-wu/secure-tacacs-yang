@@ -29,6 +29,11 @@ author:
     organization: Orange
     role: editor
     email: mohamed.boucadair@orange.com
+    
+    fullname: Bo Wu
+    organization: Huawei technology
+    role: editor
+    email: lana.wubo@huawei.com    
 
 normative:
 

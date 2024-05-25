@@ -12,9 +12,9 @@ v: 3
 area: "Operations and Management"
 workgroup: "Operations and Management Area Working Group"
 keyword:
- - next generation
- - unicorn
- - sparkling distributed ledger
+ - XXXX
+ - XXXX
+ - XXXX
 venue:
   group: "Operations and Management Area Working Group"
   type: "Working Group"
@@ -37,8 +37,7 @@ informative:
 
 --- abstract
 
-This document defines a YANG module for Terminal Access Controller Access-Control System Plus (TACACS+) over TLS 1.3.
-
+This document defines a YANG module for Terminal Access Controller Access-Control System Plus (TACACS+) over TLS 1.3. This modules augments the YANG Data Model for Terminal Access Controller Access-Control System Plus (TACACS+) defined in the RFC 9105 with TLS-related data nodes.
 
 --- middle
 
@@ -47,6 +46,10 @@ This document defines a YANG module for Terminal Access Controller Access-Contro
 This document defines a YANG module for managing Terminal Access Controller Access-Control System Plus (TACACS+) over TLS 1.3 {{!I-D.ietf-opsawg-tacacs-tls13}}. The module is designed as an augmentation to the "ietf-system-tacacs-plus" module specified in {{!RFC9105}}.
 
 The module leverages the TLS structures defined in {{!I-D.ietf-netconf-tls-client-server}}.
+
+This first version of the specification uses a pruning approach rather that a reuse of the groupings defined in {{!I-D.ietf-netconf-tls-client-server}}.
+
+> Discussion Note: RFC 9105bis or keep the current augment design.
 
 # Conventions and Definitions
 

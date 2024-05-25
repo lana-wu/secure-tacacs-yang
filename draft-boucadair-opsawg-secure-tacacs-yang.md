@@ -59,6 +59,14 @@ The meanings of the symbols in the YANG tree diagrams are defined in {{?RFC8340}
 
 The document uses the terms defined in {{Section 2 of !I-D.ietf-opsawg-tacacs-tls13}} and {{Section 3 of ?RFC8907}}.
 
+> Note to the RFC Editor: Please update the following:
+> 
+>  *  AAAA --> the assigned RFC number for {{!I-D.ietf-netconf-crypto-types}}
+>  *  BBBB --> the assigned RFC number for {{!I-D.ietf-netconf-trust-anchors}}
+>  *  CCCC --> the assigned RFC number for {{!I-D.ietf-netconf-keystore}}
+>  *  FFFF --> the assigned RFC number for {{!I-D.ietf-netconf-tls-client-server}}
+>  *  XXXX --> the assigned RFC number for this document.
+
 # Module Tree Structure
 
 The full tree structure is shown below:
@@ -69,14 +77,16 @@ The full tree structure is shown below:
 
 # YANG Module
 
-This module uses references defined in XXXX.
+This module uses types and groupings defined in {{!RFC6991}}, {{!RFC8341}}, {{!I-D.ietf-netconf-crypto-types}}, {{!I-D.ietf-netconf-trust-anchors}},
+{{!I-D.ietf-netconf-keystore}}, and {{!I-D.ietf-netconf-tls-client-server}}.
+
+The modules also cites {{!RFC9257}}, {{!RFC9258}}, {{!RFC9258}}, and {{!RFC6520}}.
 
 ~~~~~~~~~~
 <CODE BEGINS> file "ietf-system-secure-tacacs@2024-05-23.yang"
 {::include-fold ./yang/ietf-system-secure-tacacs.yang}
 <CODE ENDS>
 ~~~~~~~~~~
-
 
 # Security Considerations
 
